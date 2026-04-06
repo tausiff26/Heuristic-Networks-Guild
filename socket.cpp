@@ -25,7 +25,7 @@ int main() {
   memset(&server_address, 0, sizeof(server_address));
   server_address.sin_family = AF_INET;
   server_address.sin_addr.s_addr = INADDR_ANY;
-  server_address.sin_port = htons(6767);  // port name 6767
+  server_address.sin_port = htons(8080);  // port name 6767
   // Now we will bind the socket to an address and port
   bind(server, (sockaddr*)&server_address, sizeof(server_address));
   listen(server, 1);
